@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observability-With-Opentelemetry", "Observability-With-Opentelemetry.csproj", "{8982139C-D268-4330-96B6-F2A1D1555BAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8982139C-D268-4330-96B6-F2A1D1555BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8982139C-D268-4330-96B6-F2A1D1555BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8982139C-D268-4330-96B6-F2A1D1555BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8982139C-D268-4330-96B6-F2A1D1555BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AAFDD74C-72E0-40F1-82BD-1FB0136D1163}
+	EndGlobalSection
+EndGlobal
