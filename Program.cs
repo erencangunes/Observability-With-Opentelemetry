@@ -7,16 +7,16 @@ using OpenTelemetry.Trace;
 Console.WriteLine("Hello, World!");
 
 var traveProvider = Sdk.CreateTracerProviderBuilder()
-                        .ConfigureResource(configure =>
+        .AddSource(OpenTelemetryConstants.ActivitySourceName)
+        .ConfigureResource(configure =>
+        {
+            configure.AddService(OpenTelemetryConstants.ServiceName, OpenTelemetryConstants.ServiceVersion)
+                        .AddAttributes(new List<KeyValuePair<string, object>>()
                         {
-                            configure.AddService(OpenTelemetryConstants.ServiceName, OpenTelemetryConstants.ServiceVersion)
-                                        .AddAttributes(new List<KeyValuePair<string, object>>()
-                                        {
-                                        new KeyValuePair<string, object>("host.machine", Environment.MachineName),
-                                        new KeyValuePair<string, object>("host.os", Environment.OSVersion.VersionString),
-                                        new KeyValuePair<string, object>("host.version", "dev")
-                                        });
+                        new KeyValuePair<string, object>("host.machine", Environment.MachineName),
+                        new KeyValuePair<string, object>("host.os", Environment.OSVersion.VersionString),
+                        new KeyValuePair<string, object>("host.version", "dev")
+                        });
 
-                        }).Build();
+        }).Build();
 
-traveProvider.

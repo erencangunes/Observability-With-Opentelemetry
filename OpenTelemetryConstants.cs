@@ -11,6 +11,7 @@ namespace Observability_With_Opentelemetry
 
         internal const string ServiceName = "CompanyName.ECommerce.ConsoleApp"; // "CompanyName.ECommerce.ComponentApp"
         internal const string ServiceVersion = "1.0.0";
+        internal const string ActivitySourceName = "ActivitySource.ConsoleApp";
 
     }
 }
